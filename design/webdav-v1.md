@@ -1,6 +1,8 @@
 # WebDAV + FILES v0.5 Design
 
-Status: implemented in `nearbytes-files`.
+Status: implemented in `nearbytes-files` (v1 per-volume mount).
+
+**v2** (single mount, session volumes, timeline projection): `design/webdav-v2.md`.
 
 ## Scope
 
