@@ -1,6 +1,6 @@
 # Volume session — register, use, forget
 
-Status: specified; implementation pending in `nearbytes-files`.
+Status: specified; implemented in `nearbytes-files` REPL.
 
 ## Problem
 
@@ -14,7 +14,8 @@ per volume and typed the secret on every `open`. We want:
 ## Model
 
 - **Registered** — name + secret in `<dataDir>/.nearbytes/volume-session.json`.
-- **Open** — loaded in the REPL process (restored from retention on start).
+- **Open** — loaded in the REPL process (`volume add` / `volume use`; on REPL start
+  only the **active** volume is reopened).
 - **Active** — one volume for FTP-style commands and timeline cursor.
 
 Commands: `volume add`, `volume use`, `volume forget`, `volume list`; aliases
